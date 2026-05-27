@@ -3,6 +3,7 @@ import 'package:frontend/core/constants/app_strings.dart';
 import 'package:frontend/core/theme/app_text_styles.dart';
 import 'package:frontend/core/widgets/gradient_button.dart';
 import 'package:frontend/core/widgets/pulse_map_background.dart';
+import 'package:frontend/features/auth/auth_routes.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -29,9 +30,9 @@ class LandingScreen extends StatelessWidget {
                             GradientButton(
                 label: AppStrings.getStarted,
                 icon: Icons.rocket_launch,
-                onPressed: () {
-                  // TODO: navigate to create account — Step 11
-                },
+               onPressed: () {
+  Navigator.pushNamed(context, AuthRoutes.createAccountLocation);
+},
               ),
               const SizedBox(height: 16),
                             Row(
@@ -42,9 +43,9 @@ class LandingScreen extends StatelessWidget {
                     style: AppTextStyles.body,
                   ),
                   TextButton(
-                    onPressed: () {
-                      // TODO: navigate to login — Step 11
-                    },
+                   onPressed: () {
+  Navigator.pushNamed(context, AuthRoutes.login);
+},
                     child: Text(
                       AppStrings.login,
                       style: AppTextStyles.link,

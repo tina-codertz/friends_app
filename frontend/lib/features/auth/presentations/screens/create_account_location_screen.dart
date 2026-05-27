@@ -5,6 +5,7 @@ import 'package:frontend/core/theme/app_text_styles.dart';
 import 'package:frontend/core/widgets/gradient_button.dart';
 import 'package:frontend/core/widgets/pulse_map_background.dart';
 import 'package:frontend/features/auth/presentations/widgets/location_sharing_card.dart';
+import 'package:frontend/features/auth/auth_routes.dart';
 
 class CreateAccountLocationScreen extends StatefulWidget {
   const CreateAccountLocationScreen({super.key});
@@ -59,12 +60,14 @@ class _CreateAccountLocationScreenState
                 label: AppStrings.createAccount,
                 icon: Icons.rocket_launch,
                 onPressed: () {
-                  // TODO: Step 11 navigation
-                },
+  Navigator.pushNamed(context, AuthRoutes.createAccountCredentials);
+},
               ),
               const SizedBox(height: 12),
               TextButton(
-                onPressed: () {},
+              onPressed: () {
+  Navigator.pushNamed(context, AuthRoutes.createAccountCredentials);
+},
                 child: Text(
                   AppStrings.adjustDetails,
                   style: AppTextStyles.buttonSecondary,
@@ -72,7 +75,9 @@ class _CreateAccountLocationScreenState
               ),
               const SizedBox(height: 8),
               TextButton.icon(
-                onPressed: () {},
+               onPressed: () {
+  Navigator.pushReplacementNamed(context, AuthRoutes.login);
+},
                 icon: const Icon(Icons.arrow_back, color: AppColors.cyan, size: 18),
                 label: Text(
                   AppStrings.backToLogin,

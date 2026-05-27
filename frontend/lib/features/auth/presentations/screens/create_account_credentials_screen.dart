@@ -5,6 +5,10 @@ import 'package:frontend/core/theme/app_text_styles.dart';
 import 'package:frontend/core/widgets/pulse_map_background.dart';
 import 'package:frontend/core/widgets/pulse_progress_bar.dart';
 import 'package:frontend/core/widgets/pulse_text_field.dart';
+import 'package:frontend/features/auth/auth_routes.dart';
+
+
+
 class CreateAccountCredentialsScreen extends StatefulWidget {
   const CreateAccountCredentialsScreen({super.key});
 
