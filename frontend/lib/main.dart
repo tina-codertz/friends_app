@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/core/widgets/pulse_map_background.dart';
+import 'package:frontend/core/theme/app_theme.dart';
+import "package:frontend/core/theme/app_text_styles.dart";
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +33,11 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PulseMapBackground(
+        child:Center(
+          child:Text("PulseMap" , style:AppTextStyles.appTitle),
+        ),
+      ),
     );
   }
 }

@@ -17,7 +17,7 @@ class AppTheme{
                 surface:AppColors.cardBackground,
                 onPrimary:AppColors.background,
                 onSurface:AppColors.white,
-            )
+            ),
             scaffoldBackgroundColor:AppColors.background,
             textTheme:const TextTheme(
                 bodyMedium:AppTextStyles.body,
