@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:frontend/core/theme/app_text_styles.dart';
 import 'package:frontend/core/widgets/gradient_button.dart';
 import 'package:frontend/core/widgets/pulse_map_background.dart';
+import 'package:frontend/core/widgets/pulse_progress_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,6 +41,9 @@ class MyApp extends StatelessWidget {
                   print("Create Account button pressed");
                 },
               ),
+              
+              const SizedBox(height:24),
+              const PulseProgressBar(currentStep:2, totalSteps:4),
             ],
           ),
         ),
