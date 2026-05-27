@@ -4,7 +4,7 @@ import "package:flutter/material.dart";
 import "package:frontend/core/theme/app_colors.dart";
 
 class AppTextStyles{
-    AppTextStyles.();
+    AppTextStyles._();
 
     static const TextStyle appTitle = TextStyle(
         fontSize:32,
@@ -18,7 +18,7 @@ class AppTextStyles{
     letterSpacing:4,
     );
 
-    statuc const TextStyle body = TextStyle(
+    static const TextStyle body = TextStyle(
         fontSize:13,
         fontWeight:FontWeight.normal,
         color:AppColors.white,
@@ -29,13 +29,13 @@ class AppTextStyles{
         fontWeight:FontWeight.w500,
         color:AppColors.white,
     );
-    static const TextStyle link - TextStyle(
+    static const TextStyle link = TextStyle(
         fontSize:14,
         fontWeight:FontWeight.w500,
-        color:AppColors.cyan
+        color:AppColors.cyan,
     );
 
-    statuc const TextStyle buttonPrimary = TextStyle(
+    static const TextStyle buttonPrimary = TextStyle(
         fontSize:16,
         fontWeight:FontWeight.w600,
         color:AppColors.background,
