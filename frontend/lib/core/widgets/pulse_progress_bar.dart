@@ -5,7 +5,7 @@ import "package:frontend/core/theme/app_colors.dart";
 
 class PulseProgressBar extends StatelessWidget{
     final int currentStep;
-    final init totalSteps;
+    final int totalSteps;
 
     const PulseProgressBar({
         super.key,
@@ -21,7 +21,7 @@ class PulseProgressBar extends StatelessWidget{
 
         return ClipRRect(
             borderRadius:BorderRadius.circular(4),
-            child:SizeBox(
+            child:SizedBox(
                 height:4,
                 child:Stack(
                     children:[
@@ -31,13 +31,13 @@ class PulseProgressBar extends StatelessWidget{
                         ),
                         FractionallySizedBox(
                             widthFactor:progress,
-                            child:Containet(
+                            child:Container(
                                 color:AppColors.cyan,
                             ),
                         ),
                     ],
                 ),
             )
-        )
+        );
     }
 }
