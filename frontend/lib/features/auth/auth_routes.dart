@@ -1,5 +1,5 @@
-class Routes {
-    AuthRoutes._();
+class AuthRoutes {
+  AuthRoutes._();
 
   static const String landing = '/';
   static const String login = '/login';

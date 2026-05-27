@@ -136,7 +136,9 @@ class _CreateAccountCredentialsScreenState
               ),
                             const SizedBox(height: 16),
               TextButton.icon(
-                onPressed: () {},
+                onPressed: () {
+  Navigator.pushReplacementNamed(context, AuthRoutes.login);
+},
                 icon: const Icon(Icons.arrow_back, color: AppColors.cyan, size: 18),
                 label: Text(
                   AppStrings.backToLogin,
